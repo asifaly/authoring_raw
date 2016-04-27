@@ -13,8 +13,9 @@
       <tr>
         <td><%= book.title %></td>
         <td><%= book.description %></td>
-        <td><%= link_to 'Show', book_path(book), class: 'btn btn-success btn-sm' %>
+        <td><%= link_to 'Show', book_path(book), class: 'btn btn-info btn-sm' %>
           <%= link_to 'Edit', edit_book_path(book), class: 'btn btn-warning btn-sm'  %>
+          <%= link_to 'Preview', preview_book_path(book), class: 'btn btn-primary btn-sm'  %>
         </td>
       </tr>
     <% end %>

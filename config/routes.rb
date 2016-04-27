@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   #   resources :products
 
   resources :books do
+    get 'preview', on: :member
     resources :chapters do
       resources :sections
     end
