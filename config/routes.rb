@@ -16,7 +16,9 @@ Rails.application.routes.draw do
   #   resources :products
 
   resources :books do
-    resources :chapters
+    resources :chapters do
+      resources :sections
+    end
   end
 
   # Example resource route with options:
