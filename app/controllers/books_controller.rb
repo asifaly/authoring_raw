@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
 
-  before_action :get_book, only: [:show, :edit, :update, :destroy]
+  before_action :fetch_book, only: [:show, :edit, :update, :destroy]
 
   def index
     @books = Book.all
@@ -44,7 +44,7 @@ class BooksController < ApplicationController
     params.require(:book).permit(:title, :description)
   end
 
-  def get_book
+  def fetch_book
     @book = Book.find(params[:id])
   end
 end
