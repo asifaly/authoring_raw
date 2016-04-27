@@ -15,7 +15,7 @@
         <td><%= book.description %></td>
         <td><%= link_to 'Show', book_path(book), class: 'btn btn-success btn-sm' %>
           <%= link_to 'Edit', edit_book_path(book), class: 'btn btn-warning btn-sm'  %>
-          <%= link_to 'Delete', book_path(book), method: :delete, class: 'btn btn-danger btn-sm', data: {confirm: "Are you sure you want to delete the book?"} %></td>
+        </td>
       </tr>
     <% end %>
   </tbody>
